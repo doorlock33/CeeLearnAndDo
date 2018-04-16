@@ -1,13 +1,15 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
+<!--
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
+-->
 
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Contact <small>We'd Love to Hear From You!</small></h1>
+            <h1 class="page-header">Neem contact met ons op!</h1>
             <ol class="breadcrumb">
                 <li>@Html.ActionLink("Home", "Index", "Home")</li>
                 <li class="active">Contact</li>
@@ -20,44 +22,43 @@
     </div><!-- /.row -->
     <div class="row">
         <div class="col-sm-8">
-            <h3>Let's Get In Touch!</h3>
+            <h3>Neem contact met ons op!</h3>
             <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
             <form action="contact-form-submission.php" method="POST" role="form">
                 <div class="row">
                     <div class="form-group col-lg-4">
-                        <label for="input1">Name</label>
+                        <label for="input1">Naam</label>
                         <input type="text" id="input1" class="form-control" name="contact_name">
                     </div>
                     <div class="form-group col-lg-4">
-                        <label for="input2">Email Address</label>
+                        <label for="input2">E-mailadres</label>
                         <input type="email" id="input2" class="form-control" name="contact_email">
                     </div>
                     <div class="form-group col-lg-4">
-                        <label for="input3">Phone Number</label>
+                        <label for="input3">Telefoonnummer</label>
                         <input type="tel" id="input3" class="form-control" name="contact_phone">
                     </div>
                     <div class="clearfix"></div>
                     <div class="form-group col-lg-12">
-                        <label for="input4">Message</label>
+                        <label for="input4">Bericht</label>
                         <textarea id="input4" rows="6" class="form-control" name="contact_message"></textarea>
                     </div>
                     <div class="form-group col-lg-12">
                         <input type="hidden" value="contact" name="save">
-                        <button class="btn btn-primary" type="submit">Submit</button>
+                        <button class="btn btn-primary" type="submit">Verzenden</button>
                     </div>
                 </div>
             </form>
         </div>
         <div class="col-sm-4">
-            <h3>Modern Business</h3>
-            <h4>A Start Bootstrap Template</h4>
+            <h3>CeeLearnAndDo</h3>
             <p>
                 5555 44th Street N.<br>
                 Bootstrapville, CA 32323<br>
             </p>
-            <p><i class="fa fa-phone"></i> <abbr title="Phone">P</abbr>: (555) 984-3600</p>
-            <p><i class="fa fa-envelope-o"></i> <abbr title="Email">E</abbr>: <a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a></p>
-            <p><i class="fa fa-clock-o"></i> <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+            <p><i class="fa fa-phone"></i> <abbr title="Phone">T</abbr>: (555) 984-3600</p>
+            <p><i class="fa fa-envelope-o"></i> <abbr title="Email">E</abbr>: <a href="mailto:henkinator3000@hotmail.com">henkinator3000@hotmail.com</a></p>
+            <p><i class="fa fa-clock-o"></i> <abbr title="Hours">U</abbr>: Maandag - Vrijdag: 9:00 tot 17:00 </p>
             <ul class="list-unstyled list-inline list-social-icons">
                 <li class="tooltip-social facebook-link"><a title="Facebook" data-placement="top" data-toggle="tooltip" href="#facebook-page"><i class="fa fa-facebook-square fa-2x"></i></a></li>
                 <li class="tooltip-social linkedin-link"><a title="LinkedIn" data-placement="top" data-toggle="tooltip" href="#linkedin-company-page"><i class="fa fa-linkedin-square fa-2x"></i></a></li>

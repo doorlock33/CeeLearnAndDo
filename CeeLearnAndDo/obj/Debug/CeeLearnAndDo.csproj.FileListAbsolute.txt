@@ -238,3 +238,8 @@ C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.csproj
 C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.csproj.CopyComplete
 C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.dll
 C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.pdb
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.InitialCreate.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.csproj.GenerateResource.cache
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.contact.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.contact1.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.contact2.resources

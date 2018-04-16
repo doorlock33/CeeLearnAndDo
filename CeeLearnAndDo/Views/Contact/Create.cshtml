@@ -1,0 +1,95 @@
+﻿@model CeeLearnAndDo.Models.Contact
+@{
+    ViewBag.Title = "Contact";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Neem contact met ons op!</h1>
+            <ol class="breadcrumb">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li class="active">Contact</li>
+            </ol>
+        </div>
+        <div class="col-lg-12">
+            <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+            <iframe style="width:100%; height:400px;" scrolling="no" frameborder="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed" marginwidth="0" marginheight="0"></iframe>
+        </div>
+    </div><!-- /.row -->
+    <div class="row">
+        <div class="col-sm-8">
+            <h3>Neem contact met ons op!</h3>
+            <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            @using (Html.BeginForm("Create", "Contact", FormMethod.Post))
+            {
+                <div class="row">
+                    @Html.AntiForgeryToken()
+                    <div class="form-group col-lg-4">
+                        @Html.TextBoxFor(m => m.FullName, new { @placeholder = "Naam"})
+                        @Html.ValidationMessageFor(m => m.FullName)
+                    </div>
+                    <div class="form-group col-lg-4">
+                        @Html.TextBoxFor(m => m.PhoneNumber, new { @placeholder = "Telefoon" })
+                        @Html.ValidationMessageFor(m => m.PhoneNumber)
+                    </div>
+                    <div class="form-group col-lg-4">
+                        @Html.TextBoxFor(m => m.Email, new { @placeholder = "Email" })
+                        @Html.ValidationMessageFor(m => m.Email)
+                    </div>
+                    <div class="form-group col-lg-12">
+                        @Html.TextAreaFor(m => m.Message, new { @placeholder = "Bericht" })
+                        @Html.ValidationMessageFor(m => m.Message)
+                    </div>
+                        <div class="form-group col-lg-12">
+                            <input type="hidden" value="contact" name="save">
+                            <button class="btn btn-primary" type="submit">Verzenden</button>
+                        </div>
+                    </div>  
+            }
+            <!-- Oude PHP CODE <form action="contact-form-submission.php" method="POST" role="form"> -->
+            <!--<form action="#" method="POST" role="form">
+            <div class="row">
+                <div class="form-group col-lg-4">
+                    <label for="input1">Naam</label>
+                    <input type="text" id="input1" class="form-control" name="contact_name" placeholder="Naam">
+                </div>
+                <div class="form-group col-lg-4">
+                    <label for="input2">E-mailadres</label>
+                    <input type="email" id="input2" class="form-control" name="contact_email" placeholder="Email">
+                </div>
+                <div class="form-group col-lg-4">
+                    <label for="input3">Telefoonnummer</label>
+                    <input type="tel" id="input3" class="form-control" name="contact_phone" placeholder="Telefoon">
+                </div>
+                <div class="clearfix"></div>
+                <div class="form-group col-lg-12">
+                    <label for="input4">Bericht</label>
+                    <textarea id="input4" rows="6" class="form-control" name="contact_message" placeholder="Bericht"></textarea>
+                </div>
+                <div class="form-group col-lg-12">
+                    <input type="hidden" value="contact" name="save">
+                    <button class="btn btn-primary" type="submit">Verzenden</button>
+                </div>
+            </div>
+        </form>
+        -->
+        </div>
+        <div class="col-sm-4">
+            <h3>CeeLearnAndDo</h3>
+            <p>
+                5555 44th Street N.<br>
+                Bootstrapville, CA 32323<br>
+            </p>
+            <p><i class="fa fa-phone"></i> <abbr title="Phone">T</abbr>: (555) 984-3600</p>
+            <p><i class="fa fa-envelope-o"></i> <abbr title="Email">E</abbr>: <a href="mailto:henkinator3000@hotmail.com">henkinator3000@hotmail.com</a></p>
+            <p><i class="fa fa-clock-o"></i> <abbr title="Hours">U</abbr>: Maandag - Vrijdag: 9:00 tot 17:00 </p>
+            <ul class="list-unstyled list-inline list-social-icons">
+                <li class="tooltip-social facebook-link"><a title="Facebook" data-placement="top" data-toggle="tooltip" href="#facebook-page"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                <li class="tooltip-social linkedin-link"><a title="LinkedIn" data-placement="top" data-toggle="tooltip" href="#linkedin-company-page"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+                <li class="tooltip-social twitter-link"><a title="Twitter" data-placement="top" data-toggle="tooltip" href="#twitter-profile"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+                <li class="tooltip-social google-plus-link"><a title="Google+" data-placement="top" data-toggle="tooltip" href="#google-plus-page"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+            </ul>
+        </div>
+        </div><!-- /.row -->
+</div>

@@ -25,6 +25,8 @@ namespace CeeLearnAndDo.Models
         {
         }
 
+        public DbSet<Contact> Contacts { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
