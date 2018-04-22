@@ -32,11 +32,6 @@ summary {
     display: block;
 }
 
-/*Contact form style */
-input#FullName, input#Email, input#PhoneNumber, textarea#Message {
-    color: black;
-}
-
 audio,
 canvas,
 progress,
