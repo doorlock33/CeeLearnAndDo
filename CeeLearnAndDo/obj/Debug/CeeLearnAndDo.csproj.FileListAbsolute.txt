@@ -384,3 +384,7 @@ C:\Users\Jens Schilder\Source\Repos\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLea
 C:\Users\Jens Schilder\Source\Repos\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.VraagbaakV26.resources
 C:\Users\Jens Schilder\Source\Repos\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.VraagbaakV27.resources
 C:\Users\Jens Schilder\Source\Repos\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.VraagbaakV28.resources
+C:\Users\Jens Schilder\Source\Repos\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.Referentiesv1.resources
+C:\Users\Jens Schilder\Source\Repos\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.Referentiesv2.resources
+C:\Users\Jens Schilder\Source\Repos\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.Referentiesv3.resources
+C:\Users\Jens Schilder\Source\Repos\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.Referentiesv4.resources

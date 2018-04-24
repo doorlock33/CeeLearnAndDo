@@ -28,6 +28,7 @@ namespace CeeLearnAndDo.Models
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Article> Articles { get; set; }
         public DbSet<Question> Questions { get; set; }
+        public DbSet<Reference> References { get; set; }
 
         public static ApplicationDbContext Create()
         {

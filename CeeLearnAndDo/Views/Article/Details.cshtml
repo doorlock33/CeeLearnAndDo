@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
-            <img src="@Html.DisplayFor(model => model.Picture)" />
+            <img src="~/UploadedFiles/ArticleImages/@Html.DisplayFor(model => model.Picture)" alt="@Html.DisplayFor(model => model.Title)">
             <h3>@Html.DisplayFor(model => model.Title)</h3>
             <div>
                 @Html.DisplayFor(model => model.Content)

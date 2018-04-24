@@ -19,7 +19,7 @@
             @foreach (var item in Model)
             {
             <a href="@Url.Action("Details", "Article", new { id = item.Id })">
-                <img src="@Html.DisplayFor(modelItem => item.Picture)" />
+                <img src="~/UploadedFiles/ArticleImages/@Html.DisplayFor(modelItem => item.Picture)" alt="@Html.DisplayFor(modelItem => item.Title)">
                 <div>@Html.DisplayFor(modelItem => item.Title)</div>
                 <div>@Html.DisplayFor(modelItem => item.Date)</div>                
             </a>

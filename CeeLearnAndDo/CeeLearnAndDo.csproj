@@ -193,12 +193,14 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminArticleController.cs" />
     <Compile Include="Controllers\AdminQuestionController.cs" />
+    <Compile Include="Controllers\AdminReferenceController.cs" />
     <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PortfolioController.cs" />
     <Compile Include="Controllers\QuestionController.cs" />
+    <Compile Include="Controllers\ReferenceController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -282,6 +284,22 @@
     <Compile Include="Migrations\201804241418458_VraagbaakV28.Designer.cs">
       <DependentUpon>201804241418458_VraagbaakV28.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804241445327_Referentiesv1.cs" />
+    <Compile Include="Migrations\201804241445327_Referentiesv1.Designer.cs">
+      <DependentUpon>201804241445327_Referentiesv1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804241447344_Referentiesv2.cs" />
+    <Compile Include="Migrations\201804241447344_Referentiesv2.Designer.cs">
+      <DependentUpon>201804241447344_Referentiesv2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804241449111_Referentiesv3.cs" />
+    <Compile Include="Migrations\201804241449111_Referentiesv3.Designer.cs">
+      <DependentUpon>201804241449111_Referentiesv3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804241859303_Referentiesv4.cs" />
+    <Compile Include="Migrations\201804241859303_Referentiesv4.Designer.cs">
+      <DependentUpon>201804241859303_Referentiesv4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Article.cs" />
@@ -289,6 +307,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Question.cs" />
+    <Compile Include="Models\Reference.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -376,9 +395,16 @@
     <Content Include="Views\AdminQuestion\Details.cshtml" />
     <Content Include="Views\AdminQuestion\Edit.cshtml" />
     <Content Include="Views\AdminQuestion\Index.cshtml" />
+    <Content Include="Views\Reference\Index.cshtml" />
+    <Content Include="Views\AdminReference\Create.cshtml" />
+    <Content Include="Views\AdminReference\Delete.cshtml" />
+    <Content Include="Views\AdminReference\Details.cshtml" />
+    <Content Include="Views\AdminReference\Edit.cshtml" />
+    <Content Include="Views\AdminReference\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="UploadedFiles\ArticleImages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -453,6 +479,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804241418458_VraagbaakV28.resx">
       <DependentUpon>201804241418458_VraagbaakV28.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241445327_Referentiesv1.resx">
+      <DependentUpon>201804241445327_Referentiesv1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241447344_Referentiesv2.resx">
+      <DependentUpon>201804241447344_Referentiesv2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241449111_Referentiesv3.resx">
+      <DependentUpon>201804241449111_Referentiesv3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241859303_Referentiesv4.resx">
+      <DependentUpon>201804241859303_Referentiesv4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
