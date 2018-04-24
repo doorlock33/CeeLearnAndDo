@@ -22,23 +22,23 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Over Ons", "About", "Home")</li>
-                    @* PHP Contact Form <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
-                    <li>@Html.ActionLink("Contact", "Create", "Contact")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
                     <li id="portfolio" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li id="1columnportfolio">
-                                @Html.ActionLink("1 Kolom Portfolio", "OneColumn", "Portfolio")
+                                @Html.ActionLink("1 Column Portfolio", "OneColumn", "Portfolio")
                             </li>
                             <li id="2columnportfolio">
-                                @Html.ActionLink("2 Kolom Portfolio", "TwoColumn", "Portfolio")
+                                @Html.ActionLink("2 Column Portfolio", "TwoColumn", "Portfolio")
                             </li>
                             <li id="3columnportfolio">
-                                @Html.ActionLink("3 Kolom Portfolio", "ThreeColumn", "Portfolio")
+                                @Html.ActionLink("3 Column Portfolio", "ThreeColumn", "Portfolio")
                             </li>
                             <li id="singleportfolioitem">
-                                @Html.ActionLink("Enkel Portfolio Item", "SingleItem", "Portfolio")
+                                @Html.ActionLink("Single Portfolio Item", "SingleItem", "Portfolio")
                             </li>
                             <!-- Hier nog mee bezig -->
                         </ul>
