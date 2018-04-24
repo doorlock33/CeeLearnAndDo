@@ -191,10 +191,14 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminArticleController.cs" />
+    <Compile Include="Controllers\AdminQuestionController.cs" />
+    <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PortfolioController.cs" />
+    <Compile Include="Controllers\QuestionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -214,11 +218,77 @@
     <Compile Include="Migrations\201804161945477_contact2.Designer.cs">
       <DependentUpon>201804161945477_contact2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804240835322_Article1.cs" />
+    <Compile Include="Migrations\201804240835322_Article1.Designer.cs">
+      <DependentUpon>201804240835322_Article1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804240836568_Article2.cs" />
+    <Compile Include="Migrations\201804240836568_Article2.Designer.cs">
+      <DependentUpon>201804240836568_Article2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804240906019_Vraagbaak1.cs" />
+    <Compile Include="Migrations\201804240906019_Vraagbaak1.Designer.cs">
+      <DependentUpon>201804240906019_Vraagbaak1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804240908344_Vraagbaak2.cs" />
+    <Compile Include="Migrations\201804240908344_Vraagbaak2.Designer.cs">
+      <DependentUpon>201804240908344_Vraagbaak2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804240948423_UserIdChange.cs" />
+    <Compile Include="Migrations\201804240948423_UserIdChange.Designer.cs">
+      <DependentUpon>201804240948423_UserIdChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804240952524_UserIdChange2.cs" />
+    <Compile Include="Migrations\201804240952524_UserIdChange2.Designer.cs">
+      <DependentUpon>201804240952524_UserIdChange2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804241021221_UserIdChange3.cs" />
+    <Compile Include="Migrations\201804241021221_UserIdChange3.Designer.cs">
+      <DependentUpon>201804241021221_UserIdChange3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804241036145_DeleteQuestion.cs" />
+    <Compile Include="Migrations\201804241036145_DeleteQuestion.Designer.cs">
+      <DependentUpon>201804241036145_DeleteQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804241038216_VraagbaakV2.1.cs" />
+    <Compile Include="Migrations\201804241038216_VraagbaakV2.1.Designer.cs">
+      <DependentUpon>201804241038216_VraagbaakV2.1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804241039059_VraagbaakV22.cs" />
+    <Compile Include="Migrations\201804241039059_VraagbaakV22.Designer.cs">
+      <DependentUpon>201804241039059_VraagbaakV22.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804241041202_VraagbaakV23.cs" />
+    <Compile Include="Migrations\201804241041202_VraagbaakV23.Designer.cs">
+      <DependentUpon>201804241041202_VraagbaakV23.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804241043353_VraagbaakV24.cs" />
+    <Compile Include="Migrations\201804241043353_VraagbaakV24.Designer.cs">
+      <DependentUpon>201804241043353_VraagbaakV24.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804241341544_VraagbaakV25.cs" />
+    <Compile Include="Migrations\201804241341544_VraagbaakV25.Designer.cs">
+      <DependentUpon>201804241341544_VraagbaakV25.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804241404323_VraagbaakV26.cs" />
+    <Compile Include="Migrations\201804241404323_VraagbaakV26.Designer.cs">
+      <DependentUpon>201804241404323_VraagbaakV26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804241406286_VraagbaakV27.cs" />
+    <Compile Include="Migrations\201804241406286_VraagbaakV27.Designer.cs">
+      <DependentUpon>201804241406286_VraagbaakV27.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804241418458_VraagbaakV28.cs" />
+    <Compile Include="Migrations\201804241418458_VraagbaakV28.Designer.cs">
+      <DependentUpon>201804241418458_VraagbaakV28.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Article.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Question.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -291,6 +361,21 @@
     <Content Include="Views\Portfolio\TwoColumn.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Contact\Create.cshtml" />
+    <Content Include="Views\Article\Details.cshtml" />
+    <Content Include="Views\Article\Index.cshtml" />
+    <Content Include="Views\AdminArticle\Create.cshtml" />
+    <Content Include="Views\AdminArticle\Delete.cshtml" />
+    <Content Include="Views\AdminArticle\Details.cshtml" />
+    <Content Include="Views\AdminArticle\Edit.cshtml" />
+    <Content Include="Views\AdminArticle\Index.cshtml" />
+    <Content Include="Views\Question\Create.cshtml" />
+    <Content Include="Views\Question\Details.cshtml" />
+    <Content Include="Views\Question\Index.cshtml" />
+    <Content Include="Views\AdminQuestion\Create.cshtml" />
+    <Content Include="Views\AdminQuestion\Delete.cshtml" />
+    <Content Include="Views\AdminQuestion\Details.cshtml" />
+    <Content Include="Views\AdminQuestion\Edit.cshtml" />
+    <Content Include="Views\AdminQuestion\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -320,6 +405,54 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804161945477_contact2.resx">
       <DependentUpon>201804161945477_contact2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240835322_Article1.resx">
+      <DependentUpon>201804240835322_Article1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240836568_Article2.resx">
+      <DependentUpon>201804240836568_Article2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240906019_Vraagbaak1.resx">
+      <DependentUpon>201804240906019_Vraagbaak1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240908344_Vraagbaak2.resx">
+      <DependentUpon>201804240908344_Vraagbaak2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240948423_UserIdChange.resx">
+      <DependentUpon>201804240948423_UserIdChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240952524_UserIdChange2.resx">
+      <DependentUpon>201804240952524_UserIdChange2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241021221_UserIdChange3.resx">
+      <DependentUpon>201804241021221_UserIdChange3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241036145_DeleteQuestion.resx">
+      <DependentUpon>201804241036145_DeleteQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241038216_VraagbaakV2.1.resx">
+      <DependentUpon>201804241038216_VraagbaakV2.1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241039059_VraagbaakV22.resx">
+      <DependentUpon>201804241039059_VraagbaakV22.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241041202_VraagbaakV23.resx">
+      <DependentUpon>201804241041202_VraagbaakV23.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241043353_VraagbaakV24.resx">
+      <DependentUpon>201804241043353_VraagbaakV24.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241341544_VraagbaakV25.resx">
+      <DependentUpon>201804241341544_VraagbaakV25.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241404323_VraagbaakV26.resx">
+      <DependentUpon>201804241404323_VraagbaakV26.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241406286_VraagbaakV27.resx">
+      <DependentUpon>201804241406286_VraagbaakV27.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804241418458_VraagbaakV28.resx">
+      <DependentUpon>201804241418458_VraagbaakV28.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

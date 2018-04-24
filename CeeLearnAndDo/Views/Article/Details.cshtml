@@ -1,0 +1,31 @@
+﻿@model CeeLearnAndDo.Models.Article
+
+@{
+    ViewBag.Title = "Artikelen";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Lees onze artikelen!</h1>
+            <ol class="breadcrumb">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li class="active">Artikelen</li>
+            </ol>
+        </div>
+    </div><!-- /.row -->
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <img src="@Html.DisplayFor(model => model.Picture)" />
+            <h3>@Html.DisplayFor(model => model.Title)</h3>
+            <div>
+                @Html.DisplayFor(model => model.Content)
+            </div>
+            <div>
+                @Html.DisplayFor(model => model.Date)
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div><!-- /.row -->
+</div>

@@ -1,0 +1,29 @@
+﻿@model IEnumerable<CeeLearnAndDo.Models.Article>
+
+@{
+    ViewBag.Title = "Artikelen";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Lees onze artikelen!</h1>
+            <ol class="breadcrumb">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li class="active">Artikelen</li>
+            </ol>
+        </div>
+    </div><!-- /.row -->
+    <div class="row">
+        <div class="col-sm-12">
+            @foreach (var item in Model)
+            {
+            <a href="@Url.Action("Details", "Article", new { id = item.Id })">
+                <img src="@Html.DisplayFor(modelItem => item.Picture)" />
+                <div>@Html.DisplayFor(modelItem => item.Title)</div>
+                <div>@Html.DisplayFor(modelItem => item.Date)</div>                
+            </a>
+            }
+        </div>
+    </div><!-- /.row -->
+</div>
