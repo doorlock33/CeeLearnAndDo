@@ -1,0 +1,34 @@
+namespace CeeLearnAndDo.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class Referentiesv3 : DbMigration
+    {
+        public override void Up()
+        {
+            CreateTable(
+                "dbo.References",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Title = c.String(nullable: false),
+                        Content = c.String(nullable: false),
+                        Date = c.DateTime(nullable: false),
+                        Image = c.String(nullable: false),
+                        User_Id = c.String(maxLength: 128),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.AspNetUsers", t => t.User_Id)
+                .Index(t => t.User_Id);
+            
+        }
+        
+        public override void Down()
+        {
+            DropForeignKey("dbo.References", "User_Id", "dbo.AspNetUsers");
+            DropIndex("dbo.References", new[] { "User_Id" });
+            DropTable("dbo.References");
+        }
+    }
+}

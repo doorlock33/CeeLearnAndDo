@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -51,10 +52,23 @@ namespace CeeLearnAndDo.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title,Content,Picture")] Article article)
+        public ActionResult Create([Bind(Include = "Id,Title,Content,Picture")] Article article, HttpPostedFileBase Picture)
         {
             if (ModelState.IsValid)
             {
+                // generate random guid string as fileName
+                Guid g = Guid.NewGuid();
+                string fileName = Convert.ToBase64String(g.ToByteArray());
+                fileName = fileName.Replace("=", "");
+                fileName = fileName.Replace("+", "");
+                fileName = fileName.Replace("/", "");
+                fileName = fileName + "-article" + Path.GetExtension(Picture.FileName);
+
+                // save image
+                string path = Path.Combine(Server.MapPath("~/UploadedFiles/ArticleImages"), fileName);
+                Picture.SaveAs(path);
+                article.Picture = fileName;
+
                 article.Date = DateTime.Now;
                 article.UserId = User.Identity.GetUserId();
                 db.Articles.Add(article);
