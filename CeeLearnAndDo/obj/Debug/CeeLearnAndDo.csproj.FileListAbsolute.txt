@@ -384,3 +384,19 @@ C:\Users\Jens Schilder\Source\Repos\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLea
 C:\Users\Jens Schilder\Source\Repos\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.VraagbaakV26.resources
 C:\Users\Jens Schilder\Source\Repos\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.VraagbaakV27.resources
 C:\Users\Jens Schilder\Source\Repos\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.VraagbaakV28.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.Article1.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.Article2.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.Vraagbaak1.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.Vraagbaak2.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.UserIdChange.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.UserIdChange2.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.UserIdChange3.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.DeleteQuestion.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.VraagbaakV21.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.VraagbaakV22.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.VraagbaakV23.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.VraagbaakV24.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.VraagbaakV25.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.VraagbaakV26.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.VraagbaakV27.resources
+C:\Users\Kiet\Desktop\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.Migrations.VraagbaakV28.resources

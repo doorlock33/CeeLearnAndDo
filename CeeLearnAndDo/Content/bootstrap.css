@@ -35,6 +35,7 @@ summary {
 /*Contact form style */
 input#FullName, input#Email, input#PhoneNumber, textarea#Message {
     color: black;
+    width: 100%;
 }
 
 audio,
@@ -356,13 +357,13 @@ textarea {
 }
 
 a {
-    color: #df691a;
+    color: #bbbbbb;
     text-decoration: none;
 }
 
     a:hover,
     a:focus {
-        color: #df691a;
+        color: #bbbbbb;
         text-decoration: underline;
     }
 
@@ -603,7 +604,7 @@ cite {
 }
 
 .text-primary {
-    color: #df691a;
+    color: #bbbbbb;
 }
 
 a.text-primary:hover {
@@ -644,7 +645,7 @@ a.text-danger:hover {
 
 .bg-primary {
     color: #fff;
-    background-color: #df691a;
+    background-color: #bbbbbb;
 }
 
 a.bg-primary:hover {
@@ -2555,7 +2556,7 @@ select[multiple].input-lg {
 
 .btn-primary {
     color: #ffffff;
-    background-color: #df691a;
+    background-color: #bbbbbb;
     border-color: transparent;
 }
 
@@ -2590,12 +2591,12 @@ select[multiple].input-lg {
     .btn-primary.disabled.active,
     .btn-primary[disabled].active,
     fieldset[disabled] .btn-primary.active {
-        background-color: #df691a;
+        background-color: #bbbbbb;
         border-color: transparent;
     }
 
     .btn-primary .badge {
-        color: #df691a;
+        color: #bbbbbb;
         background-color: #ffffff;
     }
 
@@ -2784,7 +2785,7 @@ select[multiple].input-lg {
     }
 
 .btn-link {
-    color: #df691a;
+    color: #bbbbbb;
     font-weight: normal;
     cursor: pointer;
     border-radius: 0;
@@ -2808,7 +2809,7 @@ select[multiple].input-lg {
 
             .btn-link:hover,
             .btn-link:focus {
-                color: #df691a;
+                color: #bbbbbb;
                 text-decoration: underline;
                 background-color: transparent;
             }
@@ -3780,7 +3781,7 @@ input[type="button"].btn-block {
         color: #ffffff;
         text-decoration: none;
         outline: 0;
-        background-color: #df691a;
+        background-color: #bbbbbb;
     }
 
     .dropdown-menu > .disabled > a,
@@ -4285,7 +4286,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     .nav .open > a:hover,
     .nav .open > a:focus {
         background-color: #4e5d6c;
-        border-color: #df691a;
+        border-color: #bbbbbb;
     }
 
     .nav .nav-divider {
@@ -4399,7 +4400,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     .nav-pills > li.active > a:hover,
     .nav-pills > li.active > a:focus {
         color: #ffffff;
-        background-color: #df691a;
+        background-color: #bbbbbb;
     }
 
 .nav-stacked > li {
@@ -5124,7 +5125,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     .pagination > .active > span:focus {
         z-index: 2;
         color: #ebebeb;
-        background-color: #df691a;
+        background-color: #bbbbbb;
         border-color: transparent;
         cursor: default;
     }
@@ -5261,7 +5262,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 
 .label-primary {
-    background-color: #df691a;
+    background-color: #bbbbbb;
 }
 
     .label-primary[href]:hover,
@@ -5343,7 +5344,7 @@ a.badge:focus {
 
 a.list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-    color: #df691a;
+    color: #bbbbbb;
     background-color: #ffffff;
 }
 
@@ -5415,7 +5416,7 @@ a.list-group-item.active > .badge,
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-    border-color: #df691a;
+    border-color: #bbbbbb;
 }
 
 .thumbnail .caption {
@@ -5553,7 +5554,7 @@ a.thumbnail.active {
     line-height: 21px;
     color: #ffffff;
     text-align: center;
-    background-color: #df691a;
+    background-color: #bbbbbb;
     -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     -webkit-transition: width 0.6s ease;
@@ -5695,8 +5696,8 @@ a.list-group-item {
     a.list-group-item.active:focus {
         z-index: 2;
         color: #ffffff;
-        background-color: #df691a;
-        border-color: #df691a;
+        background-color: #bbbbbb;
+        border-color: #bbbbbb;
     }
 
         a.list-group-item.active .list-group-item-heading,
@@ -6084,7 +6085,7 @@ a.list-group-item-danger {
 
     .panel-primary > .panel-heading {
         color: #ffffff;
-        background-color: #df691a;
+        background-color: #bbbbbb;
         border-color: transparent;
     }
 
@@ -6975,7 +6976,7 @@ body {
 
 .text-primary,
 .text-primary:hover {
-    color: #df691a;
+    color: #bbbbbb;
 }
 
 .text-success,
